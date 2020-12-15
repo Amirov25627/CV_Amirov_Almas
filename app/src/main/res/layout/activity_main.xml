@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="2"
+        android:scaleY="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/head" />
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="168dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/head"
+        app:srcCompat="@drawable/photo"
+        />
+
+    <TextView
+        android:id="@+id/name_surname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="182dp"
+        android:layout_marginTop="40dp"
+        android:duplicateParentState="false"
+        android:text="@string/name_surname"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/photo" />
+
+        <TextView
+            android:id="@+id/profession"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profession"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            app:layout_constraintEnd_toEndOf="@+id/name_surname"
+            app:layout_constraintStart_toStartOf="@+id/name_surname"
+            app:layout_constraintTop_toBottomOf="@id/name_surname" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="32dp"
+            android:text="@string/phone"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/name_surname"
+            app:layout_constraintStart_toStartOf="@+id/name_surname"
+            app:layout_constraintTop_toBottomOf="@id/profession" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollHorizontally="false"
+            android:singleLine="false"
+            android:text="@string/email"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/name_surname"
+            app:layout_constraintStart_toStartOf="@+id/name_surname"
+            app:layout_constraintTop_toBottomOf="@id/phone" />
+
+        <TextView
+            android:id="@+id/BD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="160dp"
+            android:gravity="start"
+            android:text="@string/birth_date_head"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:textColor="@color/green"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/head" />
+
+        <TextView
+            android:id="@+id/Birth_date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="0dp"
+            android:gravity="start"
+            android:text="@string/birth_date_text"
+            android:textAlignment="viewStart"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/BD" />
+
+        <TextView
+            android:id="@+id/Birth_date_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="0dp"
+            android:gravity="start"
+            android:text="@string/birth_date_place"
+            android:textAlignment="viewStart"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Birth_date_text" />
+
+        <TextView
+            android:id="@+id/education"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="8dp"
+            android:gravity="start"
+            android:text="@string/education"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:textColor="@color/green"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/Birth_date_place" />
+
+        <TextView
+            android:id="@+id/education_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="0dp"
+            android:gravity="start"
+            android:text="@string/education_text"
+            android:textAlignment="viewStart"
+            android:textSize="16sp"
+            android:layout_marginRight="32dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/education" />
+
+        <TextView
+            android:id="@+id/experience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="8dp"
+            android:gravity="start"
+            android:text="@string/experience"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:textColor="@color/green"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/education_text" />
+
+        <TextView
+            android:id="@+id/experience_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="0dp"
+            android:gravity="start"
+            android:text="@string/experience_text"
+            android:textAlignment="viewStart"
+            android:textSize="16sp"
+            android:layout_marginRight="32dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/experience" />
+
+        <TextView
+            android:id="@+id/languages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="8dp"
+            android:gravity="start"
+            android:text="@string/languages"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:textColor="@color/green"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/experience_text" />
+
+        <TextView
+            android:id="@+id/languages_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="0dp"
+            android:gravity="start"
+            android:text="@string/languages_text"
+            android:textAlignment="viewStart"
+            android:textSize="16sp"
+            android:layout_marginRight="32dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/languages" />
+
+        <TextView
+            android:id="@+id/skills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="8dp"
+            android:gravity="start"
+            android:text="@string/skills"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:textColor="@color/green"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/languages_text" />
+
+        <TextView
+            android:id="@+id/skills_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="0dp"
+            android:gravity="start"
+            android:text="@string/skills_text"
+            android:textAlignment="viewStart"
+            android:textSize="16sp"
+            android:layout_marginRight="32dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/skills" />
+
+        <ImageView
+            android:id="@+id/phone_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/skills_text"
+            app:srcCompat="@drawable/phone_icon" />
+
+        <ImageView
+            android:id="@+id/mail_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            app:layout_constraintStart_toEndOf="@+id/phone_icon"
+            app:layout_constraintTop_toBottomOf="@+id/skills_text"
+            app:srcCompat="@drawable/mail_icon" />
+
+        <ImageView
+            android:id="@+id/telegram_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            app:layout_constraintStart_toEndOf="@+id/mail_icon"
+            app:layout_constraintTop_toBottomOf="@+id/skills_text"
+            app:srcCompat="@drawable/telegram_icon" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">CV_Amirov_almas</string>
+    <string name="name_surname">Almas Amirov</string>
+    <string name="profession">Designer</string>
+    <string name="birth_date">10.10.1991</string>
+    <string name="phone">+7 702 65 00 555</string>
+    <string name="email">amirov25627@gmail.com</string>
+    <string name="birth_date_head">Birth date and place:</string>
+    <string name="birth_date_text">10 Ocrober 1991</string>
+    <string name="birth_date_place">Kazakhstan, Jambyl city</string>
+    <string name="education">Education</string>
+    <string name="education_text">
+        2007 - 2011 JKTEC "Marketing" \n2011 - 2014 KazEU "Economics"
+    </string>
+    <string name="experience">Experience</string>
+    <string name="experience_text">
+        2014 - 2017 "Galaksi Group", Marketing specialist \n2017 - 2019 "Piramida Group", Graphic designer \n2019 - 2020 "AlmatyGenPlan", City-media inspector</string>
+    <string name="languages">Languages</string>
+    <string name="languages_text">Kazakh \nRussian \nEnglish \nTurkish</string>
+    <string name="skills">Skills</string>
+    <string name="skills_text">Windows 7/8/10 \nMS Word/Excell/PowerPoint \nAdobe Photoshop/Flash, CorellDraw, 1C \nDriving license BC</string>
+</resources>
